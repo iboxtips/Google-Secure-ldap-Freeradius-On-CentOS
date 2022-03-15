@@ -1,0 +1,9 @@
+download CentOS 7 64 bit and install.
+yum -y update
+yum -y install openssh-server
+yum -y install freeradius freeradius-ldap freeradius-utils
+yum -y install git
+yum -y install nano
+sudo yum install docker-ce docker-ce-cli containerd.io
+systemctl start docker
+git clone https://github.com/iboxtips/Google-Secure-ldap-Freeradius-On-CentOS.git freeradius-google-ldap
